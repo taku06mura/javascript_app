@@ -30,6 +30,10 @@
   window.addEventListener('keydown', e => {
     if (e.key === word[loc]) {
       loc++;
+      if (loc === word.length) {
+        word = words[Math.floor(Math.random() * words.length)];
+        loc = 0;
+      }
       updateTarget();
       score++;
       scoreLabel.textContent = score;
