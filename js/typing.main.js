@@ -11,6 +11,7 @@
     console.log(e.key);
     if (e.key === word[loc]) {
       console.log(('score'));
+      loc++;
     } else {
       console.log('miss');
     }
